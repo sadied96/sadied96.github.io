@@ -1,0 +1,106 @@
+<!--I did make note that I used Gemini AI for the photos and included the prompt I typed for them. I will probably change them out with actual pictures from my daughters classroom if possible but needed something for now. I also added where I looked up things you used in your code (just a google search) so that I could understand why you used certain codes-->
+
+<!DOCTYPE html>
+<html lang="en"> <!--We are typing in english, so this lets us know its in English-->
+<head>
+    <meta charset="UTF-8"> <!--tells us we are able to use characters, numbers, symbols-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--how the page will scale on device screens-->
+    <title>Little Learner's Corner</title> <!--The name of my page-->
+    <link rel="stylesheet" href="css/style.css"> <!--Where we add our CSS to make sure we see the changes from our style sheet-->
+
+    <!--Linking my font from google fonts! I used ChatGPT to explain how to use it correctly. I asked "When adding fonts using google font to my project, I see google gives you a copy/paste to put in the head and one in the CSS, how do I properly add it without messing up my code or confusing myself." Once I played around with it I got it figured out, since I didn't do that extra credit project.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DynaPuff:wght@400..700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Schoolbell&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header> <!--Introducing the nav links-->
+        <h1>Little Learners Corner</h1> <!--This is the title people will see-->
+        <p>A fun and supportive learning space for kids, parents, and caregivers.</p> <!--A short intro in paragraph form-->
+
+        <!--Each a href below is a link to the page that users can click on to access the following page-->
+        <nav class="nav-a">
+            <div class="nav-a-links">
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="activities.html">Activities</a>
+                <a href="learngrow.html">Learn & Grow</a>
+                <a href="contact.html">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main> <!--Where the main information is going-->
+        <section class="hero">
+            <div class="hero-slide active">
+                <!--I used the photo below generated from Gemini AI with the prompt "Can I have a realistic image created for my web page class capstone project. It's called "little learners corner" and I am focusing on an easy but fun way for kids to develop their fine motor skills, early literacy and language development. So for this first picture, I would like to have a small group of 3 diverse kids around the kindergarten age or younger. Maybe have them in a classroom setting coloring or drawing. Have 2 of them looking happy and one maybe slightly confused so that it focuses on different learning stages amongst the kids."-->
+                <img src="images/ChildrenClassroom.png" alt="Children in the classroom learning at different stages">
+            </div>
+
+            <div class="hero-content">
+                <!--I got the hero eyebrow from your code, but looked it up on my own and understand that it means a small text that usually goes above the hero image. If I am using it incorrectly or not understanding it correctly please let me know-->
+                <span class="hero-eyebrow">Inclusive learning for young children</span>
+
+                <div class="slide-text-wrapper"> <!--Also got this from your code, but understands that it keeps the text in place without overlapping the other elements-->
+                    <div class="slide-text active">
+                        <h2>Teaching little learners how to grow</h2>
+                        <p>Fun, simple, and helpful resources for children, parents, and/or caretakers.</p>
+                    </div>
+                </div>
+
+                <a href="activities.html" class="button">Explore Activities</a>
+            </div>
+        </section>
+
+        <section class="intro"> <!--Creating the next section where they can see the cards and links to go to the pages-->
+            <h2>Welcome to Little Learners Corner</h2>
+            <p>Little Learners Corner is a all inclusive space, supporting early childhood development through activities, learning tools, and helpful resources.</p>
+        </section>
+
+        <section class="cards"> <!--Adding cards to give a tiny intro before the actual pages with the information-->
+            <h2>Explore our page</h2>
+
+            <div class="card-container">
+                <article class="hover-card"> <!--Used article to separate the individual content to make it easier to read the cards and their different sections-->
+                    <!--For the image below I also used gemini AI with the prompt "For my same capstone, can I have a realistic photo of a mom and child (boy or girl is fine) reading together? We could have the child sitting on the moms lap maybe a little before bed to establish routines so I can touch on the importance of sleeping on time for developmental growth. We can have them reading and the mom looking lovingly at the child as well."-->
+                    <img src="images/Bedtimereading.png" alt="A mother reading to her child before bedtime">
+                    <div class="card-content">
+                        <h2>About</h2>
+                        <p>Learn more about why we created Little Learners Corner and how it can support you</p>
+                        <a href="about.html">Visit our About Page</a>
+                    </div>
+                </article>
+
+                <article class="hover-card">
+                    <!--Another image created by gemini AI with the prompt "Can I have another image generated of about 4 kids, still diverse and inclusive, having them tracing on paper or matching numbers on paper? To showcase learning tools"-->
+                    <img src="images/Activities.png" alt="Children in a classroom working on tracing and matching numbers/words">
+                    <div class="card-content">
+                        <h2>Learning activities</h2>
+                        <p>Explore our tracing sheets, coloring pages, and other friendly learning tools</p>
+                        <a href="activities.html">Visit our Activities Page</a>
+                    </div>
+                </article>
+
+                <article class="hover-card">
+                    <!--Adding another image from gemini AI with the prompt "Okay now can I have a new photo of a teachers desk with tracing pages and a number sheet and an alphabet sheet on it? Like little handouts he/she would give to the students? it could be birds eye view to just capture the pages on the desk. But make the pages kid friendly and attention grabbing"-->
+                    <img src="images/Learn&Grow.png" alt="A photo of a teachers desk with the activities to help students learn">
+                    <div class="card-content">
+                        <h2>Learn & Grow</h2>
+                        <p>Practice letters, numbers, vocabulary and other early learning skills.</p>
+                        <a href="learngrow.html">Visit our Learn & Grow Page</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+
+    <footer> <!--Adding the footer here to say that I made the page. Will Update it at the end once its finished with its completion date as well for the copyright to be accurate-->
+        <p>&copy; Created by Sadie Duran</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,282 @@
+/* For colors I got them from canva.com/colors */
+
+* {
+    box-sizing: border-box;
+}
+
+/* Styling the body of the page */
+body {
+    margin: 0;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #f4d9cc;
+    color: #021E27;
+    line-height: 1.6;
+}
+
+/* Formatting the images */
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* setting up the text decoration for the anchor element (a href) */
+a {
+    text-decoration: none;
+}
+
+/* Changing the header */
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+/* Styling the h1 in my header. I used the schoolbell font from google here because I thought it would grab kids since its similar enough to their own handwriting. */
+ header h1 {
+    margin: 0 0 15px;
+    color: #972675;
+    font-size: 60px;;
+    font-family: 'schoolbell', cursive;
+ }
+
+ /* styling the p in my header */
+ header p {
+    margin: 0 0 20px;
+    color: #5c1d4b;
+    font-size: 1rem;
+    font-family: 'schoolbell', cursive;
+ }
+
+
+ /* Styling the navigation links: still need to add the hamburger for the mobile nav but wanted to ask some questions about that first before I did that. I kept the navigation to the right side of the page and still have my title centered, but I might move the title to the right side once I add more images in the slide. */
+ .nav-a {
+    background-color:#f6cce6;
+    border-radius: 20px;
+    padding: 15px 20px;
+    max-width: 1100px;
+    margin: 0 auto;
+ }
+
+ .nav-a-links {
+    display: inline-block;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 15px;
+ }
+
+ .nav-a-links a {
+    color:#0b6681;
+    font-weight: bold;
+    font-family: 'DynaPuff', cursive;
+    padding: 10px 14px;
+    border-radius: 12px;
+ }
+
+/* Adding the hover to the nav to make it accessible, and having it as "active" so depending on what page you are on, it stays "active". I remember you saying this in class and looked up how to do it properly to that it functions the correct way. */
+ .nav-a-links a:hover,
+ .nav-a-links a.active {
+    background-color: #CE49AB;
+    color: #71eeea;
+ }
+
+ /* Now styling the hero image, will add a more interactive image later but wanted to focus on just making sure everything lines up first. Also adding where the text goes. Trying to find colors that fit with the current photo without the border was a little challenging, so once I have a better hero image I plan on possibly taking out the background color from the code so that it sits nicely over the images.*/
+ .hero {
+    position: relative;
+    max-width: 1200px;
+    min-height: 450px;
+    margin: 30px auto;
+    border-radius: 24px;
+    overflow: hidden;
+ }
+
+ .hero-slide {
+    width: 100%;
+    height: 450px;
+ }
+
+ .hero-slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+ }
+
+ .hero-content {
+    position: absolute;
+    top: 235px;
+    right: 35px;
+    width: 340px;
+    max-width: 700px;
+    text-align: center;
+    color: #f5f3f3;
+ }
+
+ .hero-eyebrow {
+    display: inline-block;
+    background-color: white;
+    color: #408275;
+    font-family: 'DynaPuff', cursive;
+    padding: 8px 14px;
+    border-radius: 30px;
+    font-weight: bolder;
+    margin-bottom: 12px;
+ }
+
+ .slide-text-wrapper h2 {
+    font-size: 18px;
+    font-family: 'DynaPuff', cursive;
+    background-color: white;
+    border-radius: 30px;
+    padding: 8px 14px;
+    color:#7b8613;
+    margin-bottom: 10px;
+    line-height: 1.3; /* I asked chatgpt why it wasn't lining up correctly here so it suggested using the line-height of 1.3. so this means here that we are determining the line height of the element (which was the header) because at first it was going outside of the border. */
+ }
+ 
+ .slide-text-wrapper p {
+    font-size: 15px;
+    font-family: 'DynaPuff', cursive;
+    background-color: white;
+    border-radius: 30px;
+    color: #7d288a;
+    margin-bottom: 15px;
+    line-height: 1.4;
+ }
+
+.button {
+    display: inline-block;
+    background-color: #C2C9CC;
+    color: #408275;
+    font-family: 'schoolbell', cursive;
+    padding: 10px 20px;
+    border-radius: 14px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #f4b860;
+}
+
+/* Styling the intro to the page after the hero */
+.intro {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.intro h2 {
+    color: #85306f;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-bottom: 15px;
+}
+
+/* Working on the cards that will link you to the pages and give a very brief summary about what to expect. I plan on possibly doing the z method, but for simplicity now I did them side-by-side. I tested it and the columns were responsive so far when moving the screen around 
+For understanding the code, I have everything linked that lines up where they line up in the HTML so the actual cards, the headers, the containers and adding the hovers so that they are responsive and interactive when hovering the mouse over them. I also added css to have the images and text fit within the cards so it looks cohesive. */
+
+.cards {
+    max-width: 1200px;
+    margin: 0 auto 60px;
+    padding: 0 20px;
+}
+
+.cards h2 {
+    text-align: center;
+    color: black;
+    margin-bottom: 30px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.hover-card {
+    background-color: #ffffff;
+    width: 100%;
+    margin-bottom: 25px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.68)
+}
+
+.hover-card:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.12)
+}
+
+.hover-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card-content {
+    padding: 20px;
+    text-align: center;
+}
+
+.card-content h2 {
+    color: #2f6f73;
+    font-family: 'DynaPuff', cursive;
+    font-weight: bold;
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 12px;
+}
+
+.card-content p {
+    margin-bottom: 18px;
+}
+
+.card-content a {
+    color: #5c1d4b;
+    font-weight: bold;
+}
+
+.card-content a:hover {
+    text-decoration: underline;
+}
+
+/*Changing the footer to center it since your feedback said to have the footer centered */
+footer {
+    text-align: center;
+    padding: 20px;
+    margin-top: 40px;
+}
+
+/*Tablet formatting to make sure the page works with tablets */
+/* For all of these I changed the color when you change the screen just so that it is obvious the website is responsive when moving. I understand when selecting the "px" that is what is changing the screen size in the body section so that it is responsive to all pages*/
+@media (min-wdth: 600px) {
+    body { 
+        background-color: lightblue;
+    }
+
+    .hover-card {
+        width: 48%;
+        margin: 1%;
+    }
+}
+
+/* Formatting for a regular desktop to make sure the page is responsive on desktops */
+@media (min-width: 900px) {
+    body {
+        background-color: peachpuff;
+    }
+
+    .hover-card {
+        width: 31%;
+        margin: 1%;
+    }
+}
+
+/* Formatting for a larger screen desktop, to make sure the page is also responsive on desktops */
+@media (min-width: 1200px) {
+    body {
+        background-color: #f4d9cc;
+    }
+
+    .hover-card {
+        width: 31%;
+        margin: 1%;
+    }
+}
